@@ -56,6 +56,22 @@ USER_PASSWORD=YOUR_USER_PASSWORD
 SUPPRESS_ERRORS_IN_PAD_TEXT=true
 ```
 
+## Exec into container
+Exec into the running container
+```bash
+#!/usr/bin/env bash
+
+podman exec -ti etherpad-edu bash
+```
+
+## Logs
+View logs
+```bash
+#!/usr/bin/env bash
+
+podman logs -f etherpad-edu
+```
+
 ## Clean up
 Stop etherpad-edu, destroy volume
 ```bash
