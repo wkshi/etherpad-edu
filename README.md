@@ -73,7 +73,7 @@ Backup setting
 podman exec -ti etherpad-edu cat settings.json | tee settings.json
 ```
 
-# Restart container
+## Restart container
 Restart container every time when update settings
 ```bash
 #!/usr/bin/env bash
