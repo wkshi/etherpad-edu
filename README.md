@@ -64,6 +64,15 @@ Exec into the running container
 podman exec -ti etherpad-edu bash
 ```
 
+
+## Backup settings
+Backup setting
+```bash
+#!/usr/bin/env bash
+
+podman exec -ti etherpad-edu cat settings.json | tee settings.json
+```
+
 # Restart container
 Restart container every time when update settings
 ```bash
