@@ -64,6 +64,15 @@ Exec into the running container
 podman exec -ti etherpad-edu bash
 ```
 
+# Restart container
+Restart container every time when update settings
+```bash
+#!/usr/bin/env bash
+
+podman stop etherpad-edu
+podman start etherpad-edu
+```
+
 ## Logs
 View logs
 ```bash
