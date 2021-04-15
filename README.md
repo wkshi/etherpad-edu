@@ -17,6 +17,23 @@ Push the built image to docker.io
 podman push docker.io/wenkshi/etherpad-edu
 ```
 
+## Settings
+Custom settings for installed plugin in Dockerfile
+```json
+{
+...
+  "ep_readonly_guest": {
+    "guest_username": "guest",
+    "guest_displayname": "Read-Only Guest"
+  },
+  "requireAuthentication": true,
+  "ep_image_upload": {
+    "fileTypes": ["jpeg", "jpg", "bmp", "gif", "png"],
+    "maxFileSize": 5000000
+  }
+}
+```
+
 ## Run
 Running etherpad-edu
 ```bash
