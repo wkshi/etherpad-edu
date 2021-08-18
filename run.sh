@@ -3,7 +3,7 @@
 podman run --detach \
   --name etherpad-edu \
   --restart always \
-  --publish 9001:9001 \
+  --network host \
   --env-file env.list \
   --volume etherpad_data:/opt/etherpad-lite/var \
   docker.io/wenkshi/etherpad-edu
